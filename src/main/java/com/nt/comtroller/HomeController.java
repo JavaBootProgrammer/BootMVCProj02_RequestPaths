@@ -7,19 +7,31 @@ import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.support.BindingAwareModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
 
 
-	@GetMapping("/")
+	@RequestMapping("/")
 	public String homePage()
 	{
 		System.out.println("HomeController.homePage()");
 		return "welcome";
 	}
 	
+	@GetMapping("/d1")
+	public String showSharedParam22() {
+		System.out.println("---------------");
+		
+		System.out.println("HomeController.showSharedParam()");
+		
+		
+		return "displayPARAM";
+		
+		
+	}
 	
 	@GetMapping("/param")
 	public String showSharedParam(Map<String, String> obj) {
