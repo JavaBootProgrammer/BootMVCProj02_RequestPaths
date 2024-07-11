@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 </head>
 <body>
-	<h1 style="color:red;text-align: center">Display param</h1>
+	<h1 style="color:red;text-align: center">Display Param</h1>
 	
 </body>
 </html>
